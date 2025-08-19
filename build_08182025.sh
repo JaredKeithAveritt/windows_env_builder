@@ -25,6 +25,7 @@ cat <<EOL > "${envDir}-load.bash"
 #echo 'module list'
 
 source ~/miniconda3/etc/profile.d/conda.sh
+echo 'export BROWSER=wslview' >> ~/.bashrc
 
 conda activate ${envDir}
 export LD_LIBRARY_PATH=${envDir}-packages/PythonPath/:$LD_LIBRARY_PATH
@@ -53,6 +54,7 @@ sudo apt install -y mpich libmpich-dev
 sudo apt install -y nvidia-cuda-toolkit
 sudo apt update
 sudo apt install -y ffmpeg pkg-config
+sudo apt install -y wslu
 
 conda create --prefix $envDir python=3.11 -y
 conda activate $envDir
