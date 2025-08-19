@@ -140,7 +140,7 @@ make -j 8
 
 make install-python
 
-
+conda install -c conda-forge jupyterlab ipykernel -y
 python -m ipykernel install --user --name=p311a-local
 
 
