@@ -23,9 +23,11 @@ cat <<EOL > "${envDir}-load.bash"
 #module reset
 #module load 
 #echo 'module list'
-source ${envDir}/bin/activate
-#conda activate ${envDir}
-#export LD_LIBRARY_PATH=
+
+source ~/miniconda3/etc/profile.d/conda.sh
+
+conda activate ${envDir}
+export LD_LIBRARY_PATH=${envDir}-packages/PythonPath/:$LD_LIBRARY_PATH
 
 #-------------------lammps executable----------------------#
 export lmp="${envDir}-packages/lammps/build/lmp"
@@ -131,14 +133,15 @@ git clone https://github.com/JaredKeithAveritt/lammps-UQ-MLIAP-Interface/ lammps
 pushd lammps
 mkdir build
 pushd build
-
-. build_lammps_local.sh
-
+. build_lammps.sh
 make -j 8
+
+
+
 make install-python
 
 
-python -m ipykernel install --user --name=HIPNN-01
+python -m ipykernel install --user --name=p311a-local
 
 
 
