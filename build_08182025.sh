@@ -70,6 +70,7 @@ pip3 install ase
 pip3 install RDkit
 pip3 install ipykernel
 pip3 install numpy
+pip install -U "cupy-cuda12x"
 
 echo " ## ############################################ ##"
 echo " ##                Compiling FEFF                ##"
