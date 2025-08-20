@@ -132,7 +132,7 @@ pip install -e ./
 popd
 
 
-git clone https://github.com/JaredKeithAveritt/lammps-UQ-MLIAP-Interface/ lammps
+git clone -b generalized-interface https://github.com/JaredKeithAveritt/lammps-UQ-MLIAP-Interface/ lammps
 pushd lammps
 mkdir build
 pushd build
