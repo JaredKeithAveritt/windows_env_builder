@@ -22,5 +22,7 @@ conda install -y -c conda-forge xtb xtb-python cffi
 conda install -y -c conda-forge numpy scipy matplotlib networkx ase cclib
 
 
+git clone https://github.com/ZimmermanGroup/pyGSM.git
+cd pyGSM
 
 pip install -e "$HOME/pyGSM" --no-deps
