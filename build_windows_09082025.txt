@@ -4,6 +4,23 @@ Start-Process .\Miniconda3-latest-Windows-x86_64.exe -Wait
 
 & ~/miniconda3/Scripts/conda.exe init powershell
 
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+
 & ~/miniconda3/Shell/condabin/conda-hook.ps1
 conda activate base
 
+& ~/miniconda3/Scripts/conda.exe init powershell
+
+
+conda create -y -n pygsm python=3.12
+conda activate pygsm
+
+
+conda install -y -c conda-forge xtb xtb-python cffi
+conda install -y -c conda-forge numpy scipy matplotlib networkx ase cclib
+
+
+
+pip install -e "$HOME/pyGSM" --no-deps
