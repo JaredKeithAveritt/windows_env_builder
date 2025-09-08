@@ -26,3 +26,10 @@ git clone https://github.com/ZimmermanGroup/pyGSM.git
 cd pyGSM
 
 pip install -e "$HOME/pyGSM" --no-deps
+
+
+# follow instructions:
+ NOTE: they use QCHEM, change to gaussian or GAUSSIAN
+
+
+https://zimmermangroup.github.io/pyGSM/examples/
