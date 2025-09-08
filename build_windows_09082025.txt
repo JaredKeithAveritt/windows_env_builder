@@ -21,6 +21,9 @@ conda activate pygsm
 conda install -y -c conda-forge xtb xtb-python cffi
 conda install -y -c conda-forge numpy scipy matplotlib networkx ase cclib
 
+# see if you have git
+git --version
+conda install -c conda-forge git
 
 git clone https://github.com/ZimmermanGroup/pyGSM.git
 cd pyGSM
