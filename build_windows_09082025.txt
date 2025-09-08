@@ -36,3 +36,6 @@ pip install -e "$HOME/pyGSM" --no-deps
 
 
 https://zimmermangroup.github.io/pyGSM/examples/
+
+an adapted version for GAUSSIAN is here (work in progress):
+https://github.com/JaredKeithAveritt/pyGSM/
