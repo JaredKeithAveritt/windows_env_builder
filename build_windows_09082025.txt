@@ -6,7 +6,7 @@ Start-Process .\Miniconda3-latest-Windows-x86_64.exe -Wait
 
 
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-
+# select A for yess to all.
 
 & ~/miniconda3/Shell/condabin/conda-hook.ps1
 conda activate base
