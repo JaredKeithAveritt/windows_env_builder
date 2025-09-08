@@ -1,3 +1,5 @@
 Invoke-WebRequest -Uri https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe -OutFile Miniconda3-latest-Windows-x86_64.exe
 
 Start-Process .\Miniconda3-latest-Windows-x86_64.exe -Wait
+
+& ~/miniconda3/Scripts/conda.exe init powershell
