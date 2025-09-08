@@ -39,6 +39,7 @@ EOL
 chmod +x ${envDir}-load.bash
 
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+# wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
 bash Miniconda3-latest-Linux-x86_64.sh
 # do not allow conda init!!!!
 
