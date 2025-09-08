@@ -1,18 +1,5 @@
-# Python Version:
+# follow instructions:
+ NOTE: they use QCHEM, change to gaussian or GAUSSIAN
 
-module load python/3.12-anaconda-2024.10
-git clone https://github.com/ZimmermanGroup/pyGSM.git
-cd pyGSM
 
-# Start from a fresh env under your Anaconda module
-conda create -y -n pygsm python=3.12
-conda activate pygsm
-
-# Preinstall xtb + the Python wrapper from conda-forge
-conda install -y -c conda-forge xtb xtb-python cffi
-
-# Optional helpers many pyGSM users want
-conda install -y -c conda-forge numpy scipy matplotlib networkx ase cclib
-
-# Now install pyGSM without trying to resolve deps (they’re already in the env)
-pip install -e ~/pyGSM --no-deps
+https://zimmermangroup.github.io/pyGSM/examples/
